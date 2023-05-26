@@ -1,0 +1,66 @@
+h1{
+ color:red;
+}
+
+/*pseudo class- 특정상황 조건에 실행시키는 것*/
+a:hover{
+    color: red;
+    font-weight: bold;
+}
+/*active: 클릭하는 순간만 활성화*/
+a:active{
+    color:green;
+    font-weight: bold;
+}
+ /*myform에 있는 input만 적용
+ :뒤에 있는게 pseudo, focus될때만 활성화*/
+.myForm input:focus{
+    background:pink;
+    width: 300px;
+}
+
+/**/
+.myList li:first-child {
+    color: green;
+    font-weight:bold;
+}
+
+.myList li:last-child{
+    color:red;
+    font-weight:bold;
+}
+
+.myList li:nth-child(3n+3){
+    color: orange;
+    font-weight:bold;
+}
+
+.myList li:nth-child(even){
+    background:yellow;
+    font-weight:bold;
+}
+
+.myList li:nth-child(odd){
+    background:grey;
+    font-weight:bold;
+}
+
+.wrapper{
+    border: #000 1px solid;
+    width: 600px;
+    height: 400px;
+    /*해당 페이지의 상대적 좌표계*/
+    position: relative;
+    left: 50px;
+    top:100px;
+}
+
+.inside{
+    border: #ff0000 1px solid;
+    width:200px;
+    height:100px;
+    /*부모좌표의 절대적 좌표값*/
+    position: absolute;
+    top:20px;
+    left:50px;
+}
