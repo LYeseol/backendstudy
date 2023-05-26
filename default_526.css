@@ -1,3 +1,81 @@
+
+
+
+
+
+#rounded1 {
+    background:lightblue;
+    color: white;
+    width:200px;
+    padding:10px;
+    border-radius:50px;
+}
+
+#rounded2 {
+    background:orange;
+    color: white;
+    width:200px;
+    height: 140px;
+    padding:10px;
+    border-radius:30px;
+}
+
+#rounded3 {
+    background:pink;
+    color: white;
+    width:200px;
+    height: 140px;
+    padding:10px;
+    border-radius:70px;
+}
+
+img{
+    width:300px;
+    max-height: 300px;
+    border-radius:50%;
+}
+
+#border-img{
+    border:10px solid;
+    padding:10px;
+    border-image: url('border.png') 30 round;
+}
+
+#my-bg{
+    background-image: url('border.png'), url('background_img.jpg');
+    background-position: left top, right bottom;
+    background-repeat: repeat, no-repeat;
+    padding: 20px;
+    background-size: 50px 50px, cover;
+}
+
+#grad1{
+    width:200px;
+    height:50px;
+    background:linear-gradient(to right, red, yellow);
+}
+
+#grad2{
+    width:200px;
+    height:50px;
+    background:linear-gradient(to bottom right, pink, purple);
+}
+
+#grad3{
+    width:200px;
+    height:50px;
+    background:radial-gradient(red, yellow, green);
+}
+
+#grad4{
+    width:200px;
+    height:50px;
+    background:radial-gradient(circle, lightblue, darkblue);
+}
+
+
+
+
 h1{
  color:red;
 }
