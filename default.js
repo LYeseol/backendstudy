@@ -1,19 +1,28 @@
 
+var name= "이예슬";
+var age = 29;
+var cgpa = 4.3;
+var lineBreak="<br/>"
+
+document.write("이름: "+ name + lineBreak);
+document.write("나이: "+ age + lineBreak);
+document.write("학점: "+ cgpa + lineBreak);
+
 // console.log(typeof 123);
 // console.log(typeof 123.5);
 // console.log(typeof "123");
 // console.log(typeof true);
 // console.log(typeof false);
 
-var car;
-console.log(car);
-var car ="";
-console.log(typeof car);
-var person ={firstName:"John", lastName:"Doe", age:50, eyeColor:'blue'};
-console.log(typeof person);
-person= null;
+// var car;
+// console.log(car);
+// var car ="";
+// console.log(typeof car);
+// var person ={firstName:"John", lastName:"Doe", age:50, eyeColor:'blue'};
+// console.log(typeof person);
+// person= null;
 
-console.log(typeof person);
+// console.log(typeof person);
 
 
 // document.write("Hello world");
