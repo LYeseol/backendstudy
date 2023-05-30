@@ -1,18 +1,42 @@
 
-var lName = "이";
-var fName = "예슬";
+// var text = prompt("Enter your name: ");
+// document.write("Your name: "+text +"<br/>");
 
-var fullName= lName+fName;
+// var len = text.length;
+// document.write("Number of  characters: "+ len+ " <br/>");
 
-console.log(fullName);
-console.log("Today is"+ " a "+ "beautiful day");
-console.log("My name is "+ fullName);
+// document.write(text.charAt(2)+ "<br/>");
 
-var num1 = 20;
-var num2 = 30;
-var sum = num1+num2;
-console.log(""+num1+num2);
-console.log(num1+ " + "+ num2 + " = "+ sum);
+// // 모두 대문자, 소문자로 바꾸기
+// document.write(text.toUpperCase()+ '<br/>');
+// document.write(text.toLowerCase()+ '<br/>');
+
+var text1 = " hi ";
+var text2= "bye";
+var text3= text1.concat(text2);
+var text4 = text1+text2;
+document.write(text3+"<br/>");
+document.write(text4+"<br/>");
+
+var text5 = "hello";
+document.write("Original text5: "+ text5+ "<br/>")
+var result = text5.slice(1,3); // 0-1 index text
+document.write(result + "<br/>");
+
+// var lName = "이";
+// var fName = "예슬";
+
+// var fullName= lName+fName;
+
+// console.log(fullName);
+// console.log("Today is"+ " a "+ "beautiful day");
+// console.log("My name is "+ fullName);
+
+// var num1 = 20;
+// var num2 = 30;
+// var sum = num1+num2;
+// console.log(""+num1+num2);
+// console.log(num1+ " + "+ num2 + " = "+ sum);
 
 
 
