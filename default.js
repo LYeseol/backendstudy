@@ -1,18 +1,53 @@
 
-//즉시실행 함수
-(function dispaly(message){
-    console.log(message);
-})("hi");
+var names = new Array(20);
 
-var dispaly2 = function dispalyMessage(msg){
-    console.log(msg)
-}
+names[0]="예슬";
+names[1]="포카리";
 
-dispaly2("I am message for display2");
+console.log(names[1]);
 
-(function addNumbers(a,b){
-    console.log(a,b);
-})(3,4);
+//같은값을 가진 배열 생성하기
+var students=["준수","준호", "은우", "윈터"];
+console.log("students= "+ students);
+console.log("2번 인텍스의 학생: "+ students[2]);
+
+//배열의 길이찾기
+console.log("학생 배열의 길이: "+ students.length);
+
+//배열의 요소 추가하기
+students.push("세훈");
+console.log("push 후 학생배열 = "+ students);
+
+//배열의 요소
+students.pop("준호");//맨 뒤에 요소 뺀다
+console.log("pop후 학생배열 = "+ students);
+
+//배열 연결하기
+var numArray1 = [10,20];
+var numArray2 = [30,40,50,60];
+var numArray = numArray1.concat(numArray2);
+
+console.log("배열 concat = " + numArray);
+
+console.log(numArray1+ numArray2);
+
+
+
+
+// //즉시실행 함수
+// (function dispaly(message){
+//     console.log(message);
+// })("hi");
+
+// var dispaly2 = function dispalyMessage(msg){
+//     console.log(msg)
+// }
+
+// dispaly2("I am message for display2");
+
+// (function addNumbers(a,b){
+//     console.log(a,b);
+// })(3,4);
 
 // //함수
 // function message(){
