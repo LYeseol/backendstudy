@@ -1,10 +1,16 @@
 
-var base = parseFloat(prompt(" Enter 밑변: "));
-var height = parseFloat(prompt(" Enter 높이: "));
+var cels = parseFloat(prompt("Enter cels: "));
+var farn = cels *( 9/5 )+32;
 
-var area = 0.5*base*height;
+document.write("화씨: "+ farn);
 
-document.write("Triangle Area: "+ area+ "<br/>")
+
+// var base = parseFloat(prompt(" Enter 밑변: "));
+// var height = parseFloat(prompt(" Enter 높이: "));
+
+// var area = 0.5*base*height;
+
+// document.write("Triangle Area: "+ area+ "<br/>")
 
 
 
