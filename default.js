@@ -1,20 +1,47 @@
 
-//break와 continue이해하기
-
-for(var i=1; i<=100; i++){
-    if(i ==20) break;
-
-    document.write(i+"<br/>");
+//함수
+function message(){
+    document.write("Hello, I am a function without parameter" +"<br/>");
 }
 
-document.write("=====================<br/>")
-//continue
-
-for(var k=1; k<=50; i++){
-    if(k==20) continue;
-
-    document.write(k + '<br/>');
+//한개의 매개변수를 가진 함수 생성하기
+function welcomeMessage(name){
+    document.write("welcome"+ name+ "<br/>");
 }
+
+//여러개의 매개변수를 가진 함수 생성하기
+function addition(num1, num2){
+    var sum = num1+num2;
+    document.write("addition is "+ sum +"<br/>");
+}
+
+//값을 반환하는 함수 생성하기
+function square(num){
+    return num*num;
+}
+
+message();
+welcomeMessage("이예슬");
+addition(2,3);
+document.write("square of 5 is "+ square(5)+ "<br/>");
+
+
+// //break와 continue이해하기
+
+// for(var i=1; i<=100; i++){
+//     if(i ==20) break;
+
+//     document.write(i+"<br/>");
+// }
+
+// document.write("=====================<br/>")
+// //continue
+
+// for(var k=1; k<=50; i++){
+//     if(k==20) continue;
+
+//     document.write(k + '<br/>');
+// }
 
 
 // var i = 1;
