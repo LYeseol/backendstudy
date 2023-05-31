@@ -1,15 +1,33 @@
 
-var i = 1;
-var j = 1;
-do{
-    document.write('do while: ' + i + '<br/>');
-    i++;
-}while(i<=10)
+//break와 continue이해하기
 
-while(j<=10){
-    document.write('Only while: ' + j + '<br/>');
-    j++;
+for(var i=1; i<=100; i++){
+    if(i ==20) break;
+
+    document.write(i+"<br/>");
 }
+
+document.write("=====================<br/>")
+//continue
+
+for(var k=1; k<=50; i++){
+    if(k==20) continue;
+
+    document.write(k + '<br/>');
+}
+
+
+// var i = 1;
+// var j = 1;
+// do{
+//     document.write('do while: ' + i + '<br/>');
+//     i++;
+// }while(i<=10)
+
+// while(j<=10){
+//     document.write('Only while: ' + j + '<br/>');
+//     j++;
+// }
 
 
 // var digit = parseInt(prompt("Enter a digit: "));
