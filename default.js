@@ -1,35 +1,63 @@
 
-var names = new Array(20);
+//날짜 실습
+var date = new Date();
+console.log(date);
 
-names[0]="예슬";
-names[1]="포카리";
+//년
+var year = date.getFullYear();
+console.log(year);
 
-console.log(names[1]);
+//월 정보 얻기
+var month = date.getMonth();
+console.log(month);
 
-//같은값을 가진 배열 생성하기
-var students=["준수","준호", "은우", "윈터"];
-console.log("students= "+ students);
-console.log("2번 인텍스의 학생: "+ students[2]);
+//날짜정보
+var currentDate = date.getDate();
+console.log(currentDate);
 
-//배열의 길이찾기
-console.log("학생 배열의 길이: "+ students.length);
+//요일정보
+var currentDay = date.getDay();
+console.log(currentDay);
 
-//배열의 요소 추가하기
-students.push("세훈");
-console.log("push 후 학생배열 = "+ students);
+//시간정보
+var currentHour = date.getHours();
+console.log(currentHour);
 
-//배열의 요소
-students.pop("준호");//맨 뒤에 요소 뺀다
-console.log("pop후 학생배열 = "+ students);
+//분정보
+var currentMinutes = date.getMinutes();
+console.log(currentMinutes);
 
-//배열 연결하기
-var numArray1 = [10,20];
-var numArray2 = [30,40,50,60];
-var numArray = numArray1.concat(numArray2);
+// var names = new Array(20);
 
-console.log("배열 concat = " + numArray);
+// names[0]="예슬";
+// names[1]="포카리";
 
-console.log(numArray1+ numArray2);
+// console.log(names[1]);
+
+// //같은값을 가진 배열 생성하기
+// var students=["준수","준호", "은우", "윈터"];
+// console.log("students= "+ students);
+// console.log("2번 인텍스의 학생: "+ students[2]);
+
+// //배열의 길이찾기
+// console.log("학생 배열의 길이: "+ students.length);
+
+// //배열의 요소 추가하기
+// students.push("세훈");
+// console.log("push 후 학생배열 = "+ students);
+
+// //배열의 요소
+// students.pop("준호");//맨 뒤에 요소 뺀다
+// console.log("pop후 학생배열 = "+ students);
+
+// //배열 연결하기
+// var numArray1 = [10,20];
+// var numArray2 = [30,40,50,60];
+// var numArray = numArray1.concat(numArray2);
+
+// console.log("배열 concat = " + numArray);
+
+// console.log(numArray1+ numArray2);
 
 
 
