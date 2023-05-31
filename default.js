@@ -1,23 +1,32 @@
 
-//input으로 두 숫자 받기
-var num1 = parseInt(prompt("Enter first number: "));
-var num2 = parseInt(prompt("Enter second number: "));
-var lineBreak = "<br/>"
-//덧셈
-var result = num1+num2;
-document.write("The sum is: "+ result+ lineBreak);
-//뺄셈
-var result = num1-num2;
-document.write("The sub is: "+ result+ lineBreak);
-//곱셈
-var result = num1*num2;
-document.write("The mult is: "+ result+ lineBreak);
-//나누기
-var result = num1 / num2;
-document.write("The division is: "+ result.toPrecision(3)+ lineBreak);
-//나머지
-var result = num1 %num2;
-document.write("The remainder is: "+ result+ lineBreak);
+var base = parseFloat(prompt(" Enter 밑변: "));
+var height = parseFloat(prompt(" Enter 높이: "));
+
+var area = 0.5*base*height;
+
+document.write("Triangle Area: "+ area+ "<br/>")
+
+
+
+// //input으로 두 숫자 받기
+// var num1 = parseInt(prompt("Enter first number: "));
+// var num2 = parseInt(prompt("Enter second number: "));
+// var lineBreak = "<br/>"
+// //덧셈
+// var result = num1+num2;
+// document.write("The sum is: "+ result+ lineBreak);
+// //뺄셈
+// var result = num1-num2;
+// document.write("The sub is: "+ result+ lineBreak);
+// //곱셈
+// var result = num1*num2;
+// document.write("The mult is: "+ result+ lineBreak);
+// //나누기
+// var result = num1 / num2;
+// document.write("The division is: "+ result.toPrecision(3)+ lineBreak);
+// //나머지
+// var result = num1 %num2;
+// document.write("The remainder is: "+ result+ lineBreak);
 
 
 
@@ -108,7 +117,6 @@ document.write("The remainder is: "+ result+ lineBreak);
 // var person ={firstName:"John", lastName:"Doe", age:50, eyeColor:'blue'};
 // console.log(typeof person);
 // person= null;
-
 // console.log(typeof person);
 
 
@@ -116,6 +124,7 @@ document.write("The remainder is: "+ result+ lineBreak);
 // document.write("<h1>Welcome to JS Program</h1>");
 // document.write("<h2>Welcome to JS Program</h2>");
 
+// console.debug("Welcome JS Program");
 // console.log("Welcome JS Program");
 // console.info( "Welcome JS Program");
 // console.warn( "Welcome JS Program");
