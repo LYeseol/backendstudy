@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- External style-->
+    <link rel="stylesheet" href="default.css">
+
+<body>
+    <!-- Title name -->
+    <header>
+        <br>
+        <h1>To Do List</h1>
+        <br>
+        <h3>What are u up to?</h3>
+    </header>
+
+    <div class="container mt-4">
+        <!-- input 받기 -->
+        <div class="input-group mb-2">
+            <input type="text" id ='list'class="form-control" placeholder="Add todo list....">
+            <button class="btn btn-primary" type="button" id="addlist" onclick="addList()">Add</button>
+            <button class="btn btn-danger" type="button" id="clearlist" onclick="clearList()">Clear</button>
+        </div>
+        <br>
+        <!-- to do list  -->
+        <ul id="finalResult" class="list-group list-group-flush"></ul>
+        
+    </div>
+   <figure>   
+        <footer>
+            <img src="2048px-Copyright.png" width="20">
+            Copyright 2023 To-Do List App YS
+            
+        </footer>
+   </figure>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    
+
+    <script src="default.js"></script>
+
+</body>
