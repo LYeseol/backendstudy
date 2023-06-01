@@ -77,7 +77,87 @@
 
 </div>
 
+<!-- Carousels -->
+<!--Carousels-->
+<div class="container mt-4">
+    <div id="carouselExampleControls"
+         class="carousel slide"
+         data-bs-ride="carousel"
+    >
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/900x300"
+                     class="d-block w-100"
+                     alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/900x300"
+                     class="d-block w-100"
+                     alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/900x300"
+                     class="d-block w-100"
+                     alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+        >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">이전</span>
+        </button>
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+        >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">다음</span>
+        </button>
+    </div>
+</div>
+
+<!-- Tooltip -->
+<div class="container mt-4">
+    <button type="button"
+            class="btn btn-secondary"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Tooltip on top">
+        Tooltip on Top
+    </button>
+</div>
+
+<!-- Popovers -->
+<div class="container mt-4">
+    <button type="button"
+            class="btn btn-info"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="bottom"
+            data-bs-content="This is popover example">
+        Popover on bottom
+    </button>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script>
+    var tooltipTriggerList=[].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+    var tooltipList= tooltipTriggerList.map(function(tooltipTriggerElement) {
+        return new bootstrap.Tooltip(tooltipTriggerElement)
+    });
+
+    var popoverTriggerList=[].slice.call(
+        document.querySelectorAll('[data-bs-toggle="popover"]')
+    );
+    var popoverList= popoverTriggerList.map(function(popoverTriggerElement) {
+        return new bootstrap.Popover(popoverTriggerElement)
+    })
+</script>
 </body>
 </html>
