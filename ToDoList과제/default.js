@@ -39,4 +39,5 @@ function clearList(){
     var results=document.getElementById('finalResult');
     results.innerHTML='';
     toDoList =[];
+    console.log(toDoList);
 }
