@@ -6,7 +6,7 @@ function addList(){
     var item = document.createElement('li');
     //no input
     if(newone==''){
-        alert("Add todo list");
+        alert("Add something!");
     }
     else{
        //add todo list
