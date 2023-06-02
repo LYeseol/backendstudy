@@ -1,7 +1,7 @@
 h1 {
     text-align: center;
     color: rgb(66, 94, 186);
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 50px;
     font-family: "verdana";
     position: static;
@@ -13,7 +13,9 @@ h3 {
     color: rgb(163, 182, 244);
     font-weight: bold;
     font-size: 20px;
+    font-style: oblique;
     font-family: "verdana";
+    text-decoration: underline;
     position: relative;
 }
 
