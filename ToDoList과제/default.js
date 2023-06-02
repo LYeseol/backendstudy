@@ -1,4 +1,4 @@
-var toDoList=[];
+var toDoList= new Array();
 // get input and save it into list
 function addList(){
     var results = document.getElementById('finalResult');
@@ -23,23 +23,21 @@ function addList(){
         item.appendChild(removebtn);
                         
     }
-    
+
 }
 
 function removeList(){
     var results= document.getElementById('finalResult');
-    var t = this.parentNode.textContent; 
-    t=t.substr(0,t.length-2);
+    var t = this.parentElement.innerText;
     results.removeChild(this.parentNode);
-    for (var i =0; i< toDoList.length; i++){
-        if (toDoList[i] == t) {
-            toDoList.splice(i,1);
-        }
-    }
-    
+    console.log("before",toDoList)
+    var idx = toDoList.indexOf(this.parentElement.innerText.split("Remove")[0])
+    toDoList.splice(idx,1)
+    console.log(toDoList)
 }
 
 function clearList(){
     var results=document.getElementById('finalResult');
-    results.innerHTML='';          
+    results.innerHTML='';
+    toDoList =[];
 }
