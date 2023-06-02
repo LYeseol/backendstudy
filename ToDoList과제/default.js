@@ -1,4 +1,5 @@
 var toDoList= new Array();
+
 // get input and save it into list
 function addList(){
     var results = document.getElementById('finalResult');
@@ -16,6 +17,8 @@ function addList(){
         results.appendChild(item);
         toDoList.push(newone);
         console.log(toDoList);
+
+        localStorage.setItem('todolist', JSON.stringify(toDoList))
         // add remove button 
         var removebtn = document.createElement('button');
         removebtn.innerText = 'Remove';
@@ -30,8 +33,10 @@ function removeList(){
     var results= document.getElementById('finalResult');
     results.removeChild(this.parentNode);
 //    remove element in todoList by index
-    var idx = toDoList.indexOf(this.parentElement.innerText.split("Remove")[0])
+    var ritem = this.parentElement.innerText.split("Remove")[0];
+    var idx = toDoList.indexOf(ritem)
     toDoList.splice(idx,1);
+    localStorage.setItem('todolist', JSON.stringify(toDoList))
     console.log(toDoList);
 }
 //clear all
@@ -39,5 +44,6 @@ function clearList(){
     var results=document.getElementById('finalResult');
     results.innerHTML='';
     toDoList =[];
+    localStorage.clear();
     console.log(toDoList);
 }
