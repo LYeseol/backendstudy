@@ -1,16 +1,18 @@
-a= 4
+a=5
 b=2
-total = a+b
-print("a+b= ", total)
+c=3
+d=200
 
-minus = a-b
-print("a-b=", minus)
+print('AND 연산자')
+print('a:%d  b: %d' %(a,b) )
+print('a>b and a<c: ', a>b and a>c)
+print('a>b and a<c: ', a>b and a<c)
 
-mult= a*b
-print("axb=", mult)
+print('OR연산자')
+print('a>b and a<c: ', a>b or a>c)
+print('a>b and a<c: ', a>b or a<c)
 
-div = a/b
-print("a/b=", div)
-
-print("a%b=" ,a%b)
-print("a**b =" , a**b)
+print('NOT 연산자')
+print('a:%d  b: %d c:%d' %(a,b,c) )
+print('not(a<b): ', not(a<b) )
+print('not(a<c): ', not(a<c))
