@@ -1,7 +1,9 @@
-a =0
+for i in range(1,10,2):
+    print(i)
 
-while a<=10:
-    print(a)
-    a+=1
-else:
-    print("while false, else printed")
+for i in range(-1,-10,-2):
+    print(i)
+
+a= range(5)
+for i in a:
+    print(i)
