@@ -1,9 +1,9 @@
-for i in range(1,10,2):
+import array
+stu_roll= array.array('i', [101,102,103,104])
+
+for i in stu_roll:
     print(i)
 
-for i in range(-1,-10,-2):
-    print(i)
-
-a= range(5)
-for i in a:
-    print(i)
+n = len(stu_roll)
+for i in range(n):
+    print(i , ' = ' ,stu_roll[i])
