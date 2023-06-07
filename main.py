@@ -1,7 +1,7 @@
-day = input("요일을 입력하세요: ")
-if day == "mon":
-    print("monday")
-elif day=='tue':
-    print("Tuesday")
-elif day=='wed':
-    print("Wednesday")
+a =0
+
+while a<=10:
+    print(a)
+    a+=1
+else:
+    print("while false, else printed")
