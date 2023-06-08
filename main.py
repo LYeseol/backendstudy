@@ -1,12 +1,25 @@
-# def pwd(x,y):
-#     z = x**y
-#     print(z)
-#
-# pwd(2,5)
-# pwd(5,2,3)
+# Example 1 - position arguement
+def add(x, y):
+    z = x + y
+    print('Addition: ', z)
 
-def show(name, age=27):
-    print(f'Name: {name} , Age:{age}')
 
-show(name='멋쟁이 사자',age=42)
-show(name='멋쟁이 사자')
+add(5, 2)
+
+
+# Example2
+def add(*num):
+    z = num[0] + num[1] + num[2]
+    print("Addition *: ", z)
+
+
+add(5, 2, 4)
+
+
+# Example 3
+def add(x, *num):
+    z = x + num[0] + num[1]
+    print('Addition (x+num*): ', z)
+
+
+add(5, 2, 4)
