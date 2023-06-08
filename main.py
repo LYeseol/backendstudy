@@ -1,24 +1,10 @@
-#List 실습
+#사용자 입력에서 list만들기
 
-fruits = ['apple', 'banana', 'cherry', 'orange']
-vegi = ['carrot', 'cucumber']
+user_input_list = []
+num_element = int(input("Enter Number of Element: "))
+for i in range(num_element):
+    user_input_list.append(input('enter element: '))
 
-grocery = fruits + vegi
-print(grocery)
-
-#sorting function
-numbers = [10,5,8,1,7]
-numbers.sort()
-print(numbers)
-
-#slicing
-slice_num = numbers[1:4]
-print(slice_num)
-
-#copy list
-numbers_copy = numbers.copy()
-print('numbers_copy',numbers_copy)
-numbers_copy.pop()
-print('numbers',numbers)
-numbers_copy = numbers[:]
-print(numbers_copy)
+print('user input list: ')
+for element in user_input_list:
+    print(element)
