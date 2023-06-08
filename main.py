@@ -1,20 +1,24 @@
-a = 50
-def show():
-    a = 10
-    print('show-A: ', a)
+#List 실습
+
+fruits = ['apple', 'banana', 'cherry', 'orange']
+
+print(fruits)
+
+fruits.append('grape')
+print(fruits)
+fruits.insert(2, 'kiwi')
+print(fruits)
+print(fruits.pop())
+print(fruits.pop(1))
+print(fruits)
+
+fruits.append('cherry')
+print(fruits)
+print(fruits.index('cherry'))
+print(fruits)
+
+fruits.reverse()
+print(fruits)
 
 
-show()
-print('A: ', a)
 
-
-def show2():
-    # 함수 안에서 글로벌 속성 사용
-    global a
-    print('show2-global -A: ', a)
-    a = 20
-    print('show2-A: ', a)
-
-
-show2()
-print('A: ', a)
