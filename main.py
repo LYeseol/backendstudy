@@ -1,10 +1,14 @@
-#사용자 입력에서 list만들기
+#generator
 
-user_input_list = []
-num_element = int(input("Enter Number of Element: "))
-for i in range(num_element):
-    user_input_list.append(input('enter element: '))
+def fibonacci(n):
+    a,b = 0,1
+    for _ in range(n):
+        yield a
+        a,b = b, a+ b
 
-print('user input list: ')
-for element in user_input_list:
-    print(element)
+result = fibonacci(100)
+print(result)
+print(next(result))
+
+for num in result:
+    print(num)
