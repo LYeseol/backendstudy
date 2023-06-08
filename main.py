@@ -1,14 +1,10 @@
-#generator
+def generator_alphabet(start_letter, end_letter):
+    start = ord(start_letter)
+    end = ord(end_letter)
+    while start <= end:
+        yield chr(start)
+        start += 1
 
-def fibonacci(n):
-    a,b = 0,1
-    for _ in range(n):
-        yield a
-        a,b = b, a+ b
-
-result = fibonacci(100)
-print(result)
-print(next(result))
-
-for num in result:
-    print(num)
+runner = generator_alphabet('A', 'F') #수행보류
+for letter in runner:
+    print(letter)
