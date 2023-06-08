@@ -1,64 +1,20 @@
-#
-# def add(x, **num):
-#     z= x+ num['a']+ num['b']+ num['c']
-#     print('Addition: ', z)
-#
-# add(3, a=5,b=2,c=4,d=5)
-
+a = 50
 def show():
-    x = 10
-    print(x)
+    a = 10
+    print('show-A: ', a)
+
 
 show()
+print('A: ', a)
 
-def add(y):
-    x = 10
-    print(x)
-    print(x+y)
 
-add(20)
+def show2():
+    # 함수 안에서 글로벌 속성 사용
+    global a
+    print('show2-global -A: ', a)
+    a = 20
+    print('show2-A: ', a)
 
-a= 50
-def show():
-    x = 10
-    print(x) #local
-    print(a) #global
 
-show()
-
-print('Global variable a: ', a)
-i = 0
-
-def myfunc():
-    a = i+1
-    print("My function a: ", a)
-
-myfunc()
-
-print('Global variable a: ', a)
-
-# # Example 1 - position arguement
-# def add(x, y):
-#     z = x + y
-#     print('Addition: ', z)
-#
-#
-# add(5, 2)
-#
-#
-# # Example2
-# def add(*num):
-#     z = num[0] + num[1] + num[2]
-#     print("Addition *: ", z)
-#
-#
-# add(5, 2, 4)
-#
-#
-# # Example 3
-# def add(x, *num):
-#     z = x + num[0] + num[1]
-#     print('Addition (x+num*): ', z)
-#
-#
-# add(5, 2, 4)
+show2()
+print('A: ', a)
