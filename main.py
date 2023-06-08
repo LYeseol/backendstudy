@@ -1,27 +1,12 @@
+# def pwd(x,y):
+#     z = x**y
+#     print(z)
 #
-# def add():
-#     x = 10
-#     y = 20
-#     c = x+y
-#     return c
-#
-# sum = add()
-# print(sum)
-#
-# def add2():
-#     x=10
-#     y=20
-#
-#     return x+y
-#
-# sum2 =add2()
-# print(sum2)
+# pwd(2,5)
+# pwd(5,2,3)
 
-def add(y):
-    x =10
-    c=x+y
-    d = y-x
-    return c, d, 50
+def show(name, age=27):
+    print(f'Name: {name} , Age:{age}')
 
-sum4, sub, a = add(20)
-print(sum4, ' ',  sub, ' ')
+show(name='멋쟁이 사자',age=42)
+show(name='멋쟁이 사자')
