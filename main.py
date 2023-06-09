@@ -1,10 +1,24 @@
-add = lambda x,y: (x+y)
+class Mobile:
+    fp ='yes' #class member 변수
 
-print(add(5,2))
+realme = Mobile()
+redme = Mobile()
+geek = Mobile()
 
-add_sub = lambda x, y=3: (x+y, x-y)
-a,s = add_sub(5,2)
+#class name space
+print(Mobile.fp)
+print(realme.fp)
+print(redme.fp)
+print(geek.fp)
 
-print(a)
-print(s)
+Mobile.fp = 'no'
+print(Mobile.fp)
+print(realme.fp)
+print(redme.fp)
+print(geek.fp)
 
+realme.fp ='Not Working'
+print(Mobile.fp)
+print(realme.fp)
+print(redme.fp)
+print(geek.fp)
