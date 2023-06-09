@@ -1,19 +1,21 @@
-class Vector(object):
-    def __init__(self,x,y):
-        #instance variable
-        self.x = x
-        self.y = y
+import time
+# print(time.time())
+# print(time.ctime())
 
-    #연산자 오버로딩- 클래스 내에서 같은 이름의 메소드를 여러 개 선언, 상속 관련 x
-    def __add__(self, other):
-        return Vector(self.x+other.x, self.y+other.y)
-    #연산자 오버라이딩==> 기존 메소드 변경
-    def __str__(self):
-        return f'Vector({self.x}, {self.y})'
+from datetime import datetime
+from datetime import date
 
-a = Vector(1,2)
-b = Vector(3,4)
+dt = datetime(year=2023, month=5, day = 5, hour=10, minute=30)
+print(dt)
+print(type(dt))
 
-print(a)
-print(b)
-print(a+b)
+current_time= time.time()
+current_datetime= datetime.now()
+print(current_datetime)
+print(current_datetime, current_datetime)
+
+d= date(year=2023, month=5, day = 25)
+print(d)
+
+current_date = date.today()
+print(current_date)
