@@ -1,3 +1,2 @@
-Hello, world
-Welcome to Python!
-Have a great day!
+This is a new file. 
+ Python is fun!
