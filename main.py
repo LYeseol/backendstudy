@@ -1,7 +1,8 @@
+class CustomException(Exception):
+    def __init__(self, message):
+        self.message = message
+
 try:
-    number = 5 + "Not a number"
-    # number = int("Not a number")
-except ValueError:
-    print("Error : Invalid value")
-except TypeError:
-    print("Error: Invalid type")
+    raise CustomException("This is a custom exception")
+except CustomException as e:
+    print(f"Error: {e.message}")
