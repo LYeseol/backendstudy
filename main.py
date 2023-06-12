@@ -1,8 +1,13 @@
-class CustomException(Exception):
-    def __init__(self, message):
-        self.message = message
+a = ['a1','b2','c3']
 
-try:
-    raise CustomException("This is a custom exception")
-except CustomException as e:
-    print(f"Error: {e.message}")
+# for i in range(len(a)):
+#     print(i, a[i])
+#
+i=0
+for v in a:
+    print(i,v)
+    i+=1
+
+for i, j in enumerate(a):
+    print(i,j)
+
